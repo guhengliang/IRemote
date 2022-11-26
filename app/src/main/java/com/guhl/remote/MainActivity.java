@@ -175,15 +175,18 @@ public class MainActivity extends AppCompatActivity {
                 */
                 switch (pro_index) {
                     case 2://Samsung
+                        //华为P20升级鸿蒙系统后此接口不能使用
                         //consumerIrManagerApi.transmit(38000, IRlevel_SAM(keyCode + customerId));//低位在前
                         tv_freqs.setText("已发送遥控码值：0x"+keyCode+"0x"+customerId);// 显示结果
                     case 1://KONKA
+                        //华为P20升级鸿蒙系统后此接口不能使用
                         //consumerIrManagerApi.transmit(38000, IRlevel_KK(customerId + keyCode));//高位在前
                         tv_freqs.setText("已发送遥控码值：0x"+customerId+"0x"+keyCode);// 显示结果
                         break;
                     case 0://NEC
                     default:
                         keyCode = cuclationKeyCode(keyCode);
+                        //华为P20升级鸿蒙系统后此接口不能使用
                         //consumerIrManagerApi.transmit(38000, IRlevel(keyCode + customerId));//低位在前
                         tv_freqs.setText("已发送遥控码值：0x"+keyCode+"0x"+customerId);// 显示结果
                 }
